@@ -1,9 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import CardList from './components/card-list/card-list.component.jsx';
-import {SearchBox} from './components/search-box/search-box.component.jsx'
-
-
+import {SearchBox} from './components/search-box/search-box.component.jsx';
 class App extends Component {
   constructor(){
     super(); 
@@ -21,7 +19,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 }
 
 handleChange = (e) => {
-  this.setState({searchField:e.target.value});
+  this.setState({searchField:e.target.value, title: e.target.value});
 }
 
   render(){
